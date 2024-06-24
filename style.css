@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+html, body {
+    height: 100%;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'outfit', sans-serif, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 303px;
+    height: 550px;
+    border-radius: 15px;
+    padding: 25px;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 0px 50px 30px 0px hsl(0, 0%, 0%,.09);
+}
+
+.main-image {
+    width: 303px;
+    height: 303px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 22px;
+    font-weight: 580;
+    margin: 18px 0px 0px 0px;
+}
+
+p.description {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.45;
+    color: hsl(215, 51%, 70%);
+    margin-top: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.left-side, .right-side {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.currency {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    margin: 0;
+}
+
+.time {
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.seperator {
+    border-bottom: 1px solid hsl(215, 32%, 27%); 
+    padding-bottom: 20px; 
+    margin-top: 3px;
+    margin-bottom: 6px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.author span {
+    color: hsl(215, 51%, 70%);
+}
