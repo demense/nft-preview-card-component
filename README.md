@@ -8,7 +8,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- Live Site URL: https://demense.github.io/social-links-profile/
+- Live Site URL: https://demense.github.io/nft-preview-card-component/
 
 ### Built with
 
