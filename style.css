@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 11px; text-align: center; color: hsl(215, 51%, 70%) ;}
+.attribution a { color:white; text-decoration: none;}
 
 html, body {
     height: 100%;
@@ -9,7 +9,7 @@ html, body {
     font-family: 'outfit', sans-serif, serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -22,17 +22,60 @@ html, body {
     box-shadow: 0px 50px 30px 0px hsl(0, 0%, 0%,.09);
 }
 
+.image-container {
+    position: relative;
+    width: 100%;
+  }
+
 .main-image {
     width: 303px;
     height: 303px;
     border-radius: 10px;
+    margin-bottom: 23px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
-h1 {
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 154px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+
+  .background {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 303px;
+    height: 303px;
+    border-radius: 10px;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+  }
+  
+  .image-container:hover .middle {
+    opacity: 1;
+  }
+
+  .image-container:hover .background {
+    opacity: 0.5;
+  }
+
+.title {
     color: white;
     font-size: 22px;
     font-weight: 580;
-    margin: 18px 0px 0px 0px;
+    text-decoration: none;
+}
+
+.title:hover {
+    color: hsl(178, 100%, 50%);
 }
 
 p.description {
@@ -80,7 +123,6 @@ p.description {
     display: flex;
     align-items: center;
     gap: 15px;
-    color: white;
 }
 
 .avatar {
@@ -92,4 +134,13 @@ p.description {
 
 .author span {
     color: hsl(215, 51%, 70%);
+}
+
+.author a {
+    text-decoration: none;
+    color: white;
+}
+
+.author a:hover {
+    color: hsl(178, 100%, 50%);
 }
